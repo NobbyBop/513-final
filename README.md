@@ -16,6 +16,9 @@ Machine learning analysis comparing CART, KNN, and Naive Bayes models to predict
 
 **Winner**: CART with 84.2% variance explained and minimal overfitting.
 
+**Agentic Model**: We also use Claude Haiku 4.5 and E2B as an agentic model to generate its own EDA, cleaning, and modeling code to arrive it its own results.
+This model also found CART to be the winner, verifying our pick.
+
 ## Requirements
 - Python 3.10+
 - Anthropic API key (for Claude Haiku 4.5 model)
@@ -33,8 +36,6 @@ pip install pandas scikit-learn numpy matplotlib e2b-code-interpreter python-dot
 # Run analysis
 jupyter notebook final.ipynb
 ```
-
-**Note**: This notebook uses Claude Haiku 4.5 as an agentic model to generate automated analysis summaries and reports from the model comparison results.
 
 ## Key Findings
 - CART achieves superior predictive accuracy with optimal generalization
